@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header') %>
+    <title>New Entry</title>
+</head>
+<body>
+
+    <div class="container p-4">
+        <form method="post" target="/new-entry" class="card card-body">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" class="form-control" id="title" placeholder="Entry a new title" autofocus required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" name="author" class="form-control" id="author" placeholder="Entry a new title" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="image">Imagen</label>
+                <input type="text" name="image" class="form-control" id="image" placeholder="Entry a new title" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" placeholder="Description" class="form-control" required></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Save book" class="btn btn-primary">
+        </form>
+    </div>
+    
+</body>
+</html>
